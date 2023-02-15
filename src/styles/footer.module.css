@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: var(--navy);
+}
+
+.footer span {
+  color: white;
+  font-size: var(--fs-xs);
+}
+

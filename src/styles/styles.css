@@ -1,0 +1,70 @@
+/* Import CSS (this should all be added to same file in production) */
+@import url('./fonts.css');
+
+/* Reset CSS */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img,
+svg,
+video,
+canvas,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  overflow-wrap: break-word;
+}
+
+/* Root Variables */
+:root {
+  --fs-xs: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);
+  --fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  /* Color */
+  --orange: rgba(236, 134, 24, 1);
+  --purple: rgba(56, 4, 108, 1);
+  --navy: rgba(20, 30, 40, 1);
+  --ivory: rgba(250, 245, 245, 1);
+}
+
+* {
+  font-family: 'Montserrat';
+  font-size: var(--fs-base);
+}

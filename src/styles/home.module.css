@@ -1,0 +1,108 @@
+
+.home {
+    font-size: var(--fs-base);
+}
+
+/* Content styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Content Header Styling */
+.content header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--orange);
+}
+
+.content header h2 {
+    color: white;
+    font-size: var(--fs-xl);
+    margin-bottom: 1rem;
+}
+
+.line {
+    width: 90%;
+    border-bottom: 1px solid white;
+}
+
+.intro {
+    color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.prompts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.prompts a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: 3px solid white;
+    transition: all ease-in-out 300ms;
+}
+
+.prompts a:hover {
+    color: var(--orange);
+    background-color: white;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+
+
+/* Content advice styling */
+.content section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.advice > div {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.advice h4 {
+    font-weight: 300;
+    color: var(--orange);
+    font-size: var(--fs-base);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.advice h3 {
+    font-weight: 500;
+    font-size: var(--fs-md);
+}
+
+.photoone {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('../images/HR-Team.jpg');
+}
+
+.phototwo {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('../images/HR-Computer.jpg');
+}
+
+

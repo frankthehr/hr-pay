@@ -1,0 +1,25 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+
+.socials a:hover {
+    scale: 1.1;
+    transition: all ease-in-out 300ms;
+}
+
+.socials svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--orange);
+}
+
+.socials svg:hover {
+    cursor: pointer;
+}
