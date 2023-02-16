@@ -3,6 +3,7 @@ import { AppContext } from '../App';
 import { Link } from 'react-router-dom';
 import styles from '../styles/services.module.css';
 import GpFaq from './gpfaq';
+import Logos from './logos';
 import { homeEN, homeFR } from '../data/copy' 
 
 const Services = () => {
@@ -131,12 +132,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className={styles.benefitPrompt}>
-        <div>
-          <span>Want to benefit from our HR and payroll solutions?</span>
-          <Link to="/contact">Get in touch!</Link>
-        </div>
-      </div>
+      <Logos />
     </div>
   )
 }

@@ -17,12 +17,11 @@
 
 .title {
   color: var(--orange);
-  font-family: 'Lato Bold';
 }
 
 .title h1 {
   font-size: var(--fs-xxxl);
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat Black';
 }
 
 .title h2 {

@@ -17,6 +17,7 @@
 .socials svg {
     width: 1.5rem;
     height: 1.5rem;
+    text-decoration: none;
 }
 
 .socials svg:hover {

@@ -11,14 +11,14 @@ const Menu = () => {
     <div className={styles.menu}>
       <div className={styles.top}>
         <div className={styles.hello}>
-          <h3>SAY HELLO</h3>
+          <h3>GET IN TOUCH</h3>
           <a>Random link</a>
           <a>Random link</a>
           <a>Random link</a>
         </div>
 
         <div className={styles.projects}>
-          <h3>MY WORK</h3>
+          <h3>OUR SERVICES</h3>
           <a>Random link</a>
           <a>Random link</a>
           <a>Random link</a>
@@ -34,7 +34,6 @@ const Menu = () => {
 
       <div className={styles.bottom}>
         <span className={styles.copyright}>&copy; HR Company</span>
-        <span className={styles.close} onClick={() => setShowMenu(!showMenu)}>Close Menu</span>
         <Link to='/' className={styles.home} onClick={() => setShowMenu(false)}>Return Home</Link>
       </div>
     </div>

@@ -99,21 +99,14 @@
   padding-left: 1rem;
 }
 
-.close {
-  padding-right: 1rem;
-  border-right: 1px solid var(--navy);
-}
-
 .home,
-.close,
 .copyright {
   color: var(--navy);
   font-size: var(--fs-base);
   font-family: 'Montserrat', sans-serif;
 }
 
-.home:hover,
-.close:hover {
+.home:hover {
   cursor: pointer;
 }
 

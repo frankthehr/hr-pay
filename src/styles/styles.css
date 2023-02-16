@@ -81,15 +81,15 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
   margin-left: 1rem;
 	cursor: pointer;
 	z-index: 200;
 }
 
 .navbarBurger span {
-  height: 0.1rem;
+  height: 2px;
   width: 100%;
   background-color: var(--orange);
   transition: all 800ms ease-in-out;
@@ -105,7 +105,7 @@ span {
   transition: all 500ms ease-in-out;
   transform: rotate(45deg);
   transform-origin: top left;
-  width: 2rem;
+  width: 1.62rem;
 }
 
 .navbarBurger .menuSelected:nth-of-type(2) {
@@ -118,7 +118,7 @@ span {
   transition: all 500ms ease-in-out;
   transform: rotate(-45deg);
   transform-origin: bottom left;
-  width: 2rem;
+  width: 1.62rem;
 }
 
 /* FAQ Styling */

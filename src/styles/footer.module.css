@@ -9,7 +9,12 @@
 }
 
 .footer span {
-  color: white;
+  color: var(--ivory);
   font-size: var(--fs-xs);
+}
+
+.footer svg {
+  fill: var(--ivory);
+  color: var(--ivory);
 }
 
