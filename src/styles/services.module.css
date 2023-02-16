@@ -1,18 +1,241 @@
 .services {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   width: 100%;
   background-color: var(--ivory);
-  padding: 3rem 10%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.intro,
+.payroll,
+.hr,
+.payrollAdvisors,
+.hrForYou {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 3rem;
 }
 
 .services h2 {
   font-size: var(--fs-md);
   margin-bottom: 0.5rem;
+  font-family: 'Montserrat Bold';
 }
 
-.intro h2 {
-  font-size: var(--fs-md);
+.payroll h2 {
+  margin-bottom: 1rem;
+}
+
+.hrForYou p {
   margin-bottom: 0.5rem;
+}
+
+.hrForYou li {
+  font-size: var(--fs-sm);
+  font-family: 'Montserrat';
+  margin-bottom: 0.25rem;
+}
+
+.hrForYou li:before {
+  /* Unicode bullet symbol */
+  content: '\2022 ';
+  /* Bullet color */
+  color: var(--orange);
+  padding-right: 0.5em;
+}
+
+
+
+/* Payroll Solutions */
+.payrollSolutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.payrollSolutions > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--navy);
+  box-shadow: var(--shadowGrey) 0px 0.5rem 1.5rem;
+  transition: var(--ease300);
+}
+
+.payrollSolutions > div:hover {
+  transform: scale(1.05);
+  transition: var(--ease300);
+}
+
+.payrollSolutions > div i {
+  color: var(--ivory);
+  font-size: 3rem;
+}
+
+.payrollSolutions > div span {
+  color: var(--ivory);
+  font-family: 'Montserrat Bold';
+}
+
+
+
+/* Payroll Advisors Styling */
+.payrollAdvisors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 10%;
+  background-color: var(--navy);
+}
+
+.payrollAdvisors h2,
+.payrollAdvisors p {
+  color: var(--ivory);
+}
+
+.payrollAdvisors h2 {
+  margin-bottom: 0;
+}
+
+.payrollAdvisors div {
+  min-width: 100%;
+  border-top: 1px solid var(--orange);
+}
+
+.payrollAdvisors a {
+  color: var(--ivory);
+  text-decoration: none;
+  font-family: 'Montserrat Bold';
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  transition: var(--ease300);
+}
+
+.payrollAdvisors a:hover {
+  transform: scale(1.05);
+  transition: var(--ease300);
+  cursor: pointer;
+}
+
+/* Advice Styling */
+/* Content advice styling */
+.advice {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.advice > div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.advice h4 {
+  font-weight: 300;
+  color: var(--orange);
+  font-size: var(--fs-base);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.advice h3 {
+  font-weight: 500;
+  font-size: var(--fs-md);
+}
+
+.photoone {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url('../images/HR-Team.jpg');
+}
+
+.phototwo {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url('../images/HR-Computer.jpg');
+}
+
+
+
+
+/* HR Solutions */
+.hrSolutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.hrSolutions > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  box-shadow: var(--shadowGrey) 0px 0.5rem 1.5rem;
+  transition: var(--ease300);
+}
+
+.hrSolutions > div:hover {
+  transform: scale(1.05);
+  transition: var(--ease300);
+}
+
+.hrSolutions > div h3 {
+  color: var(--ivory);
+  font-size: var(--fs-md);
+  font-family: 'Montserrat Bold';
+  text-align: center;
+}
+
+.hrSolutions > div span {
+  color: var(--ivory);
+  font-size: var(--fs-base);
+  font-family: 'Montserrat Light';
+  text-align: center;
+}
+
+
+/* Legal Question Styling */
+.legalQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--navy);
+  color: var(--ivory);
+}
+
+.legalQuestion h3 {
+  font-size: var(--fs-md);
+  font-family: 'Montserrat Black';
+}
+
+.legalQuestion a {
+  color: var(--ivory);
+  text-decoration: none;
+  font-family: 'Montserrat Bold';
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  transition: var(--ease300);
+}
+
+.legalQuestion a:hover {
+  transform: scale(1.05);
+  transition: var(--ease300);
+  cursor: pointer;
 }

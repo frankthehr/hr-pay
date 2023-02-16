@@ -1,0 +1,193 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 10%;
+  background-color: var(--orange);
+  z-index: 10;
+}
+
+/* Top Styling */
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hello,
+.projects,
+.blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hello h3,
+.projects h3,
+.blogs h3 {
+  color: var(--ivory);
+  font-size: var(--fs-base);
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+.hello a,
+.projects a,
+.blogs a {
+  color: var(--navy);
+  font-size: var(--fs-base);
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+/* Animated Underline Styling */
+.home,
+.close,
+.hello a,
+.projects a,
+.blogs a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home:after,
+.close:after,
+.hello a:after,
+.projects a:after,
+.blogs a:after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid var(--navy);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+
+.home:hover:after,
+.close:hover:after,
+.hello a:hover:after,
+.projects a:hover:after,
+.blogs a:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+
+/* Bottom Styling */
+.bottom {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--navy);
+}
+
+.copyright {
+  margin-right: auto;
+}
+
+.home {
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.close {
+  padding-right: 1rem;
+  border-right: 1px solid var(--navy);
+}
+
+.home,
+.close,
+.copyright {
+  color: var(--navy);
+  font-size: var(--fs-base);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home:hover,
+.close:hover {
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices below 480px in width */
+@media (max-width: 576px) {
+
+  .menu {
+    padding: 2.5rem;
+  }
+
+  /* Top Styling */
+  .top {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .hello,
+  .projects,
+  .blogs {
+    gap: 0.5rem;
+  }
+
+  /* Bottom Styling */
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .copyright {
+    margin-right: 0;
+  }
+
+  .close {
+    border-right: none;
+    padding-right: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid var(--navy);
+    border-bottom: 1px solid var(--navy);
+  }
+
+  .home {
+    padding-left: 0rem;
+  }
+
+  .home,
+  .close,
+  .copyright {
+    align-self: flex-end;
+  }
+
+}
+
+/* Media Query for Tablet Devices above 577px and below 992px in width */
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .menu {
+    padding: 5rem 10%;
+  }
+
+  /* Top Styling */
+  .top {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hello,
+  .projects,
+  .blogs {
+    gap: 0.75rem;
+  }
+
+}

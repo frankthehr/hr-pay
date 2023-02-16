@@ -1,33 +1,23 @@
 import { useContext} from 'react';
 import { AppContext } from '../App';
 import { homeFR, homeEN } from '../data/copy';
+import Menu from '../components/menu';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Landing from '../components/landing';
-import Services from '../components/services';
+import GPServices from '../components/services';
 import styles from '../styles/home.module.css';
 
 const Home = () => {
 
-    const { lang } = useContext(AppContext);
+    const { lang, showMenu } = useContext(AppContext);
 
     return (
         <>
             <Navbar />
             <Landing />
-            <Services />
+            <GPServices />
             <div className={styles.content}>
-                <header>
-                    <h2>{lang ? homeEN.header : homeFR.header }</h2>
-                    <div className={styles.line}></div>
-                    <p className={styles.intro}>
-                        {lang ? homeEN.intro : homeFR.intro }
-                    </p>
-                    <div className={styles.prompts}>
-                        <a href="https://hrcompany.fr/" rel="noopener noreferrer" target="_blank">{lang ? homeEN.hrLinkPrompt : homeFR.hrLinkPrompt }</a>
-                        <a href="https://www.globalpaie.com/" rel="noopener noreferrer" target="_blank">{lang ? homeEN.paieLinkPrompt : homeFR.paieLinkPrompt }</a>
-                    </div>
-                </header>
 
                 <section className={styles.advice}>
                     <div>
@@ -48,6 +38,7 @@ const Home = () => {
                 </section>
             </div>
             <Footer />
+            { showMenu && <Menu />}
         </>
     )
   }

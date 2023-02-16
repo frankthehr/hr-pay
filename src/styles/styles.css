@@ -58,13 +58,170 @@ span {
   --fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
   /* Color */
+  --red: rgba(207, 61, 64, 1);
   --orange: rgba(236, 134, 24, 1);
   --purple: rgba(56, 4, 108, 1);
   --navy: rgba(20, 30, 40, 1);
   --ivory: rgba(250, 245, 245, 1);
+  --grey: rgba(230, 230, 230, 1);
+  --shadowGrey: rgba(150, 160, 160, 0.5);
+  /* Transitions */
+  --ease100: all ease-in-out 100ms;
+  --ease300: all ease-in-out 300ms;
+  --ease500: all ease-in-out 500ms;
 }
 
 * {
   font-family: 'Montserrat';
   font-size: var(--fs-base);
+}
+
+/* Navbar Burger Styling */
+.navbarBurger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 1rem;
+	cursor: pointer;
+	z-index: 200;
+}
+
+.navbarBurger span {
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--orange);
+  transition: all 800ms ease-in-out;
+}
+
+.navbarBurger .menuSelected {
+  transition: all 200ms ease-in-out;
+  background-color: var(--navy);
+  transform-origin: top left;
+}
+
+.navbarBurger .menuSelected:nth-of-type(1) {
+  transition: all 500ms ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 2rem;
+}
+
+.navbarBurger .menuSelected:nth-of-type(2) {
+  transition: all 100ms ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.navbarBurger .menuSelected:nth-of-type(3) {
+  transition: all 500ms ease-in-out;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 2rem;
+}
+
+/* FAQ Styling */
+#faq {
+}
+
+#faq .f {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+#faq .q {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+#faq .q h4 {
+  font-size: var(--fs-base);
+}
+
+#faq .q svg {
+  width: calc(var(--fs-base) - 0.25rem);
+  height: calc(var(--fs-base) - 0.25rem);
+  min-width: calc(var(--fs-base) - 0.25rem);
+  min-height: calc(var(--fs-base) - 0.25rem);
+  margin-top: 0.1rem;
+  stroke: black;
+  stroke-width: 2;
+  transform: rotate(45deg);
+  transition: all ease-in-out 300ms;
+}
+
+#faq .q svg.open {
+  transform: rotate(0deg);
+  transition: all ease-in-out 300ms;
+}
+
+#faq .a p,
+#faq .a div {
+  padding-top: 0.25rem;
+}
+#faq .a a {
+  color: black;
+}
+
+/* FAQ Styling */
+#gpfaq {
+  color: var(--navy);;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#gpfaq .f {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--navy);
+}
+
+#gpfaq .f:last-child {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: none;
+}
+
+#gpfaq .q {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+#gpfaq .q h4 {
+  font-size: var(--fs-base);
+}
+
+#gpfaq .q svg {
+  width: calc(var(--fs-base) - 0.25rem);
+  height: calc(var(--fs-base) - 0.25rem);
+  min-width: calc(var(--fs-base) - 0.25rem);
+  min-height: calc(var(--fs-base) - 0.25rem);
+  margin-top: 0.1rem;
+  stroke: var(--navy);
+  stroke-width: 2;
+  transform: rotate(45deg);
+  transition: all ease-in-out 300ms;
+}
+
+#gpfaq .q svg.open {
+  transform: rotate(0deg);
+  transition: all ease-in-out 300ms;
+}
+
+#gpfaq .a p,
+#gpfaq .a div {
+  padding-top: 0.25rem;
+}
+#gpfaq .a a {
+  color: black;
 }

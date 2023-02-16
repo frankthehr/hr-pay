@@ -9,6 +9,7 @@ export const AppContext = React.createContext();
 function App() {
 
   const [lang, setLang] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     checkLangPref();
@@ -21,7 +22,7 @@ function App() {
   }
 
   return (
-    <AppContext.Provider value={{ lang, setLang }}>
+    <AppContext.Provider value={{ lang, setLang, showMenu, setShowMenu }}>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='*' element={<NotFound />}/>
