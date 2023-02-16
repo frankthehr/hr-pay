@@ -5,7 +5,7 @@ import styles from '../styles/services.module.css';
 import GpFaq from './gpfaq';
 import { homeEN, homeFR } from '../data/copy' 
 
-const Landing = () => {
+const Services = () => {
 
   const { lang } = useContext(AppContext);
 
@@ -103,9 +103,9 @@ const Landing = () => {
 
       <section className={styles.advice}>
         <div>
-          <h4>Digital HR management</h4>
-          <h3>HRIS</   h3>
-          <p>Collaborative space for managing absences, holidays, schedules, deposits</p>
+          <h4>Professional HR Support</h4>
+          <h3>Your dedicated HR advisor is at your disposal</   h3>
+          <p>We provide you with a dedicated HR advisor, reachable on a daily basis by phone. Its role is to support you in the management of your company's human resources, while ensuring that all the documents you write for your employees comply with social legislation.</p>
         </div>
         <div className={styles.photoone}></div>
       </section>
@@ -113,22 +113,32 @@ const Landing = () => {
       <section className={styles.advice}>
         <div className={styles.phototwo}></div>
         <div>
-          <h4>Digital HR management</h4>
-          <h3>Digital Safee</h3>
-          <p>Deposit and conservation of HR and personal documents in your employees' safe</p>
+          <h4>We ensure that your business is in compliance with the law</h4>
+          <h3>HR documentation adapted to your corporate culture</h3>
+          <p>Imagine that your employment contracts, house rules and all your HR procedures and practices are regularly updated, without you having to worry about them. That is the job of our experts. We take care of the necessary changes to your internal HR documentation, freeing up your time to deal with more important topics.</p>
         </div>
       </section>
 
-      <section className={styles.advice}>
-        <div className={styles.phototwo}></div>
+      <div className={styles.together}>
+        <div className={styles.togetherText}>
+        <h3>HR Company and Globalpaie, united by common values.</h3>
+
+        <p>We are driven by the desire to provide you with a quality service and to make Human Resources a real strength of your company.</p>
+
+        <p>For this we make it a point of honor to answer you in less than 24 hours, to accompany you every day in the management of your HR issues, and to allow you to devote yourself in all serenity to your activity.</p>
+
+        <p>Because we share common values, we form for you the most complementary duo of payroll and HR management players. Each specialist in its core activity, at the service of your company. You do not benefit from 1, but 2 advisors dedicated to your business.</p>
+        </div>
+      </div>
+
+      <div className={styles.benefitPrompt}>
         <div>
-          <h4>{lang ? homeEN.adviceSubtitle : homeFR.adviceSubtitle }</h4>
-          <h3>{lang ? homeEN.adviceTitle : homeFR.adviceTitle }</h3>
-          <p>{lang ? homeEN.adviceText : homeFR.adviceText }</p>
-         </div>
-      </section>
+          <span>Want to benefit from our HR and payroll solutions?</span>
+          <Link to="/contact">Get in touch!</Link>
+        </div>
+      </div>
     </div>
   )
 }
   
-export default Landing;
+export default Services;

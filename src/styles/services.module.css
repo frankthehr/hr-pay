@@ -11,10 +11,15 @@
 .payroll,
 .hr,
 .payrollAdvisors,
-.hrForYou {
+.hrForYou,
+.together {
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 3rem;
+}
+
+.payrollAdvisors {
+  margin-top: 3rem;
 }
 
 .services h2 {
@@ -111,13 +116,15 @@
   text-decoration: none;
   font-family: 'Montserrat Bold';
   padding: 1rem 2rem;
-  border-radius: 1rem;
-  background-color: var(--orange);
+  border: 3px solid var(--ivory);
+  background-color: var(--navy);
   transition: var(--ease300);
 }
 
 .payrollAdvisors a:hover {
-  transform: scale(1.05);
+  color: var(--navy);
+  background-color: var(--orange);
+  border: 3px solid var(--orange);
   transition: var(--ease300);
   cursor: pointer;
 }
@@ -126,13 +133,13 @@
 /* Content advice styling */
 .advice {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .advice > div {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 10% 15%;
 }
 
 .advice h4 {
@@ -238,4 +245,30 @@
   transform: scale(1.05);
   transition: var(--ease300);
   cursor: pointer;
+}
+
+
+/* Together Styling */
+.together {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: var(--ivory);
+  background-color: var(--navy);
+}
+
+.togetherText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.together h3 {
+  font-size: var(--fs-md);
+  font-family: 'Montserrat Black';
+}
+
+.together p {
+  font-size: var(--fs-base);
+  font-family: 'Montserrat Light';
 }
